@@ -8,26 +8,17 @@
 #include <math.h>
 #include <vector>
 #include <numeric>
-#include <chrono>
 
 #include "input_reader.hpp"
 #include "statistical_analysis_methods.hpp"
+#include "runtime_clock.hpp"
 
 using namespace std;
-using namespace std::chrono;
 
 float R = 1.0f;
 
 vector<float> pi_approximations_all;
 vector<float> buffons_needle_probabilities_all;
-
-float clock_method_runtime_seconds(float method()){
-    auto start_time = high_resolution_clock::now();
-    method();
-    auto end_time = high_resolution_clock::now();
-    auto run_time_ms = duration_cast<microseconds>(end_time - start_time);
-    return (float)run_time_ms.count() / 1000000;
-}
 
 float buffon_monte_carlo(){
     int n_hits = 0;
@@ -96,7 +87,7 @@ float approximate_pi_monte_carlo(){
 }
 
 void stats_pi_approximation(){
-    float runtime = clock_method_runtime_seconds(approximate_pi_monte_carlo);
+    float runtime = run_with_timer(approximate_pi_monte_carlo);
     printf("MONTE CARLO - PI Approximation stats \n\n");
     printf("Runtime: %f seconds \n", runtime);
     printf("Mean: %f \n", mean(pi_approximations_all));
@@ -107,7 +98,7 @@ void stats_pi_approximation(){
 }
 
 void stats_buffons_needle(){
-    float runtime = clock_method_runtime_seconds(buffons_needle_monte_carlo);
+    float runtime = run_with_timer(buffons_needle_monte_carlo);
     printf("Buffon's needle stats \n\n");
     printf("Runtime: %f seconds \n", runtime);
     printf("Mean: %f \n", mean(buffons_needle_probabilities_all));

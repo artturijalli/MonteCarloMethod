@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E0252E1B2C00C56E7D /* input_reader.cpp */; };
 		8763B5EB252E28ED00C56E7D /* statistical_analysis_methods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */; };
+		8763B5EE252E2A6500C56E7D /* runtime_clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */; };
 		87AECB4325223D340075CD28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AECB4225223D340075CD28 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		8763B5E1252E1B2C00C56E7D /* input_reader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input_reader.hpp; sourceTree = "<group>"; };
 		8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = statistical_analysis_methods.cpp; sourceTree = "<group>"; };
 		8763B5EA252E28ED00C56E7D /* statistical_analysis_methods.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = statistical_analysis_methods.hpp; sourceTree = "<group>"; };
+		8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = runtime_clock.cpp; sourceTree = "<group>"; };
+		8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = runtime_clock.hpp; sourceTree = "<group>"; };
 		87AECB3F25223D340075CD28 /* Monte_carlo_simulation_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Monte_carlo_simulation_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AECB4225223D340075CD28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,8 @@
 				8763B5E1252E1B2C00C56E7D /* input_reader.hpp */,
 				8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */,
 				8763B5EA252E28ED00C56E7D /* statistical_analysis_methods.hpp */,
+				8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */,
+				8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */,
 			);
 			path = Monte_carlo_simulation_project;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87AECB4325223D340075CD28 /* main.cpp in Sources */,
+				8763B5EE252E2A6500C56E7D /* runtime_clock.cpp in Sources */,
 				8763B5EB252E28ED00C56E7D /* statistical_analysis_methods.cpp in Sources */,
 				8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */,
 			);
