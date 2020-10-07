@@ -12,9 +12,10 @@ int M;
 int N;
 float D_LINES;
 float L_NEEDLE;
+float R_CIRCLE;
 
 void read_params(){
     std::fstream myfile("params.txt", std::ios_base::in);
     std::string a;
-    myfile >> a >> M >> a >> N >> a >> D_LINES >> a >> L_NEEDLE;
+    myfile >> a >> M >> a >> N >> a >> D_LINES >> a >> L_NEEDLE >> a >> R_CIRCLE;
 }

@@ -15,8 +15,6 @@
 
 using namespace std;
 
-float R = 1.0f;
-
 vector<float> pi_approximations_all;
 vector<float> buffons_needle_probabilities_all;
 
@@ -51,7 +49,7 @@ float circle_monte_carlo(){
         float y_rand = ((float) rand() / (RAND_MAX));
         float r = sqrt((x_rand * x_rand) + (y_rand * y_rand));
         
-        if(r <= R){
+        if(r <= R_CIRCLE){
             n_in++;
         }
         j++;
