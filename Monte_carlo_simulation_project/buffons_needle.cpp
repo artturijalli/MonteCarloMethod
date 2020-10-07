@@ -9,7 +9,7 @@
 #include "buffons_needle.hpp"
 #include "statistical_analysis_methods.hpp"
 #include "runtime_clock.hpp"
-#include "input_reader.hpp"
+#include "global_params.hpp"
 
 vector<float> buffons_needle_probabilities_all;
 

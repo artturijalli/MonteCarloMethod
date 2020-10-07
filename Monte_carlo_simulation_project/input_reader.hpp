@@ -12,12 +12,6 @@
 #include <stdio.h>
 #include <fstream>
 
-extern int M;
-extern int N;
-extern float D_LINES;
-extern float L_NEEDLE;
-extern float R_CIRCLE;
-
 void read_params();
 
 #endif /* input_reader_hpp */

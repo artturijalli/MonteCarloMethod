@@ -9,7 +9,7 @@
 #include "monte_carlo_pi_approximation_circle.hpp"
 #include "statistical_analysis_methods.hpp"
 #include "runtime_clock.hpp"
-#include "input_reader.hpp"
+#include "global_params.hpp"
 
 vector<float> pi_approximations_all;
 

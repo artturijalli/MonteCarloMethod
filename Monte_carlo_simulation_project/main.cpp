@@ -14,6 +14,7 @@
 #include "runtime_clock.hpp"
 #include "buffons_needle.hpp"
 #include "monte_carlo_pi_approximation_circle.hpp"
+#include "global_params.hpp"
 
 using namespace std;
  

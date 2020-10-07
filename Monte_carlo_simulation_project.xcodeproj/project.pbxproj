@@ -32,6 +32,7 @@
 		871D4894252E3A410031C5B3 /* buffons_needle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = buffons_needle.hpp; sourceTree = "<group>"; };
 		871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monte_carlo_pi_approximation_circle.cpp; sourceTree = "<group>"; };
 		871D4897252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = monte_carlo_pi_approximation_circle.hpp; sourceTree = "<group>"; };
+		871D4899252E3D390031C5B3 /* global_params.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = global_params.hpp; sourceTree = "<group>"; };
 		8763B5E0252E1B2C00C56E7D /* input_reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = input_reader.cpp; sourceTree = "<group>"; };
 		8763B5E1252E1B2C00C56E7D /* input_reader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input_reader.hpp; sourceTree = "<group>"; };
 		8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = statistical_analysis_methods.cpp; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				871D4894252E3A410031C5B3 /* buffons_needle.hpp */,
 				871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */,
 				871D4897252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.hpp */,
+				871D4899252E3D390031C5B3 /* global_params.hpp */,
 			);
 			path = Monte_carlo_simulation_project;
 			sourceTree = "<group>";
