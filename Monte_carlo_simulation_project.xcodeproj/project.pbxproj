@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E0252E1B2C00C56E7D /* input_reader.cpp */; };
 		87AECB4325223D340075CD28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AECB4225223D340075CD28 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8763B5E0252E1B2C00C56E7D /* input_reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = input_reader.cpp; sourceTree = "<group>"; };
+		8763B5E1252E1B2C00C56E7D /* input_reader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input_reader.hpp; sourceTree = "<group>"; };
 		87AECB3F25223D340075CD28 /* Monte_carlo_simulation_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Monte_carlo_simulation_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AECB4225223D340075CD28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				87AECB4225223D340075CD28 /* main.cpp */,
+				8763B5E0252E1B2C00C56E7D /* input_reader.cpp */,
+				8763B5E1252E1B2C00C56E7D /* input_reader.hpp */,
 			);
 			path = Monte_carlo_simulation_project;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87AECB4325223D340075CD28 /* main.cpp in Sources */,
+				8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

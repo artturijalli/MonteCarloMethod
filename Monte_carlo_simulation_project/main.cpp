@@ -4,31 +4,21 @@
 //  Copyright © 2020 Artturi Jalli. All rights reserved.
 
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <math.h>
 #include <vector>
 #include <numeric>
 #include <chrono>
 
+#include "input_reader.hpp"
+
 using namespace std;
 using namespace std::chrono;
-
-int M;
-int N;
-float D_LINES;
-float L_NEEDLE;
 
 float R = 1.0f;
 
 vector<float> pi_approximations_all;
 vector<float> buffons_needle_probabilities_all;
-
-void read_params(){
-    std::fstream myfile("params.txt", std::ios_base::in);
-    string a;
-    myfile >> a >> M >> a >> N >> a >> D_LINES >> a >> L_NEEDLE;
-}
 
 float WSTest(vector<float> array, float std)
 {
