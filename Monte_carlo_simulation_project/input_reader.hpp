@@ -11,7 +11,10 @@
 
 #include <stdio.h>
 #include <fstream>
+#include <string>
 
 void read_params();
+
+void read_csg_params();
 
 #endif /* input_reader_hpp */
