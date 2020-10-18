@@ -7,9 +7,6 @@
 //
 
 #include "buffons_needle.hpp"
-#include "statistical_analysis_methods.hpp"
-#include "runtime_clock.hpp"
-#include "global_params.hpp"
 
 vector<float> buffons_needle_probabilities_all;
 
@@ -53,6 +50,6 @@ void stats_buffons_needle(){
     printf("Mean: %f \n", mean(buffons_needle_probabilities_all));
     printf("The Standard Deviation: %f \n", STD(buffons_needle_probabilities_all));
     printf("Figure of Merit (FOM): %f \n", FOM(buffons_needle_probabilities_all, runtime));
-    printf("Bonus excercise: WSTest result %f", WSTest(buffons_needle_probabilities_all, STD(buffons_needle_probabilities_all)));
+    printf("Bonus excercise: WSTest result %f", WST_test(buffons_needle_probabilities_all, STD(buffons_needle_probabilities_all)));
     printf("\n\n");
 }

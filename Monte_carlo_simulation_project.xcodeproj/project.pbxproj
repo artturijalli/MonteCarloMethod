@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87095A9B2535FDC6003226E8 /* quadratic_surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095A992535FDC6003226E8 /* quadratic_surface.cpp */; };
+		87095AA125374157003226E8 /* derived_surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095A9F25374157003226E8 /* derived_surface.cpp */; };
+		87095AA425375685003226E8 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095AA225375685003226E8 /* cell.cpp */; };
+		87095AA725384198003226E8 /* cell_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095AA525384198003226E8 /* cell_search.cpp */; };
 		871D4895252E3A410031C5B3 /* buffons_needle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871D4893252E3A410031C5B3 /* buffons_needle.cpp */; };
 		871D4898252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */; };
 		8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E0252E1B2C00C56E7D /* input_reader.cpp */; };
 		8763B5EB252E28ED00C56E7D /* statistical_analysis_methods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */; };
 		8763B5EE252E2A6500C56E7D /* runtime_clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */; };
 		87AECB4325223D340075CD28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AECB4225223D340075CD28 /* main.cpp */; };
+		87E26383253C2DC100B58043 /* volumes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E26381253C2DC100B58043 /* volumes.cpp */; };
+		87E26389253C2F2300B58043 /* monte_carlo_volume_sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */; };
+		87E2638E253C315800B58043 /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E2638C253C315800B58043 /* random.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +35,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87095A992535FDC6003226E8 /* quadratic_surface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = quadratic_surface.cpp; sourceTree = "<group>"; };
+		87095A9A2535FDC6003226E8 /* quadratic_surface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = quadratic_surface.hpp; sourceTree = "<group>"; };
+		87095A9F25374157003226E8 /* derived_surface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = derived_surface.cpp; sourceTree = "<group>"; };
+		87095AA025374157003226E8 /* derived_surface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = derived_surface.hpp; sourceTree = "<group>"; };
+		87095AA225375685003226E8 /* cell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		87095AA325375685003226E8 /* cell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cell.hpp; sourceTree = "<group>"; };
+		87095AA525384198003226E8 /* cell_search.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cell_search.cpp; sourceTree = "<group>"; };
+		87095AA625384198003226E8 /* cell_search.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cell_search.hpp; sourceTree = "<group>"; };
 		871D4893252E3A410031C5B3 /* buffons_needle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = buffons_needle.cpp; sourceTree = "<group>"; };
 		871D4894252E3A410031C5B3 /* buffons_needle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = buffons_needle.hpp; sourceTree = "<group>"; };
 		871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monte_carlo_pi_approximation_circle.cpp; sourceTree = "<group>"; };
@@ -41,6 +56,12 @@
 		8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = runtime_clock.hpp; sourceTree = "<group>"; };
 		87AECB3F25223D340075CD28 /* Monte_carlo_simulation_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Monte_carlo_simulation_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AECB4225223D340075CD28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87E26381253C2DC100B58043 /* volumes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = volumes.cpp; sourceTree = "<group>"; };
+		87E26382253C2DC100B58043 /* volumes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = volumes.hpp; sourceTree = "<group>"; };
+		87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monte_carlo_volume_sampling.cpp; sourceTree = "<group>"; };
+		87E26388253C2F2300B58043 /* monte_carlo_volume_sampling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = monte_carlo_volume_sampling.hpp; sourceTree = "<group>"; };
+		87E2638C253C315800B58043 /* random.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = random.cpp; sourceTree = "<group>"; };
+		87E2638D253C315800B58043 /* random.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = random.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,20 +94,66 @@
 		87AECB4125223D340075CD28 /* Monte_carlo_simulation_project */ = {
 			isa = PBXGroup;
 			children = (
-				87AECB4225223D340075CD28 /* main.cpp */,
+				87E2638F253C31C100B58043 /* surfaces */,
+				87E26390253C320500B58043 /* main */,
+				87E2638B253C314200B58043 /* utils */,
+				87E2638A253C302500B58043 /* experiments */,
+			);
+			path = Monte_carlo_simulation_project;
+			sourceTree = "<group>";
+		};
+		87E2638A253C302500B58043 /* experiments */ = {
+			isa = PBXGroup;
+			children = (
+				871D4893252E3A410031C5B3 /* buffons_needle.cpp */,
+				871D4894252E3A410031C5B3 /* buffons_needle.hpp */,
+				871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */,
+				871D4897252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.hpp */,
+				87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */,
+				87E26388253C2F2300B58043 /* monte_carlo_volume_sampling.hpp */,
+			);
+			path = experiments;
+			sourceTree = "<group>";
+		};
+		87E2638B253C314200B58043 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				87095AA525384198003226E8 /* cell_search.cpp */,
+				87095AA625384198003226E8 /* cell_search.hpp */,
 				8763B5E0252E1B2C00C56E7D /* input_reader.cpp */,
 				8763B5E1252E1B2C00C56E7D /* input_reader.hpp */,
 				8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */,
 				8763B5EA252E28ED00C56E7D /* statistical_analysis_methods.hpp */,
 				8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */,
 				8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */,
-				871D4893252E3A410031C5B3 /* buffons_needle.cpp */,
-				871D4894252E3A410031C5B3 /* buffons_needle.hpp */,
-				871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */,
-				871D4897252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.hpp */,
+				87E26381253C2DC100B58043 /* volumes.cpp */,
+				87E26382253C2DC100B58043 /* volumes.hpp */,
+				87E2638C253C315800B58043 /* random.cpp */,
+				87E2638D253C315800B58043 /* random.hpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		87E2638F253C31C100B58043 /* surfaces */ = {
+			isa = PBXGroup;
+			children = (
+				87095A992535FDC6003226E8 /* quadratic_surface.cpp */,
+				87095A9A2535FDC6003226E8 /* quadratic_surface.hpp */,
+				87095A9F25374157003226E8 /* derived_surface.cpp */,
+				87095AA025374157003226E8 /* derived_surface.hpp */,
+				87095AA225375685003226E8 /* cell.cpp */,
+				87095AA325375685003226E8 /* cell.hpp */,
+			);
+			path = surfaces;
+			sourceTree = "<group>";
+		};
+		87E26390253C320500B58043 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				87AECB4225223D340075CD28 /* main.cpp */,
 				871D4899252E3D390031C5B3 /* global_params.hpp */,
 			);
-			path = Monte_carlo_simulation_project;
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +214,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				871D4898252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp in Sources */,
+				87E26383253C2DC100B58043 /* volumes.cpp in Sources */,
+				87E2638E253C315800B58043 /* random.cpp in Sources */,
+				87095A9B2535FDC6003226E8 /* quadratic_surface.cpp in Sources */,
+				87E26389253C2F2300B58043 /* monte_carlo_volume_sampling.cpp in Sources */,
 				871D4895252E3A410031C5B3 /* buffons_needle.cpp in Sources */,
+				87095AA425375685003226E8 /* cell.cpp in Sources */,
 				87AECB4325223D340075CD28 /* main.cpp in Sources */,
 				8763B5EE252E2A6500C56E7D /* runtime_clock.cpp in Sources */,
 				8763B5EB252E28ED00C56E7D /* statistical_analysis_methods.cpp in Sources */,
+				87095AA725384198003226E8 /* cell_search.cpp in Sources */,
+				87095AA125374157003226E8 /* derived_surface.cpp in Sources */,
 				8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

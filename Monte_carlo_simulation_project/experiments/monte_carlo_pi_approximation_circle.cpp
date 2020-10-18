@@ -7,9 +7,6 @@
 //
 
 #include "monte_carlo_pi_approximation_circle.hpp"
-#include "statistical_analysis_methods.hpp"
-#include "runtime_clock.hpp"
-#include "global_params.hpp"
 
 vector<float> pi_approximations_all;
 
@@ -53,6 +50,6 @@ void stats_pi_approximation(){
     printf("Mean: %f \n", mean(pi_approximations_all));
     printf("The Standard Deviation: %f \n", STD(pi_approximations_all));
     printf("Figure of Merit (FOM): %f \n", FOM(pi_approximations_all, runtime));
-    printf("Bonus excercise: WSTest result %f", WSTest(pi_approximations_all, STD(pi_approximations_all)));
+    printf("Bonus excercise: WSTest result %f", WST_test(pi_approximations_all, STD(pi_approximations_all)));
     printf("\n\n");
 }

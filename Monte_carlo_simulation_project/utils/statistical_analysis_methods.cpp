@@ -8,7 +8,7 @@
 
 #include "statistical_analysis_methods.hpp"
 
-float WSTest(vector<float> array, float std)
+float WST_test(vector<float> array, float std)
 {
     float Q, range, min, max;
     min = *min_element(array.begin(), array.end());

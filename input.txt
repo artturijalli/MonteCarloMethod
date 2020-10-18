@@ -1,0 +1,102 @@
+cell fuel
+    type cylinder
+        is_complement 0                                                                                                                                                     
+        axis z
+        x0 0
+        y0 0
+        z0 0
+        r 0.412
+end_cell
+
+cell cladding
+    type cylinder
+        is_complement 1
+        axis z
+        x0 0
+        y0 0
+        z0 0
+        r 0.412
+    type cylinder
+        is_complement 0
+        axis z
+        x0 0
+        y0 0
+        z0 0
+        r 0.475
+end_cell
+
+cell coolant
+    type cylinder
+        is_complement 1
+        axis z
+        x0 0
+        y0 0
+        z0 0
+        r 0.475
+    derived_type infinite_square_prism
+    is_complement 0
+        type plane
+            is_complement 0
+            axis x
+            x0 -0.665
+            y0 0
+            z0 0
+            r 0
+        type plane
+            is_complement 0
+            axis x
+            x0 0.665
+            y0 0
+            z0 0
+            r 0
+        type plane
+            is_complement 0
+            axis y
+            x0 0
+            y0 -0.665
+            z0 0
+            r 0
+        type plane
+            is_complement 0
+            axis y
+            x0 0
+            y0 0.665
+            z0 0
+            r 0
+    end_derived
+end_cell
+
+cell outside_world
+    derived_type infinite_square_prism
+    is_complement 1
+        type plane
+            is_complement 0
+            axis x
+            x0 -0.665
+            y0 0
+            z0 0
+            r 0
+        type plane
+            is_complement 0
+            axis x
+            x0 0.665
+            y0 0
+            z0 0
+            r 0
+        type plane
+            is_complement 0
+            axis y
+            x0 0
+            y0 -0.665
+            z0 0
+            r 0
+        type plane
+            is_complement 0
+            axis y
+            x0 0
+            y0 0.665
+            z0 0
+            r 0
+    end_derived
+end_cell
+

@@ -14,6 +14,10 @@
 #include <math.h>
 #include <numeric>
 
+#include "statistical_analysis_methods.hpp"
+#include "runtime_clock.hpp"
+#include "global_params.hpp"
+
 using namespace std;
 
 extern vector<float> pi_approximations_all;
