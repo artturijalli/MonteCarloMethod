@@ -28,6 +28,18 @@ std::vector<quadratic_surface> quadratic_surfaces;
 std::vector<derived_surface> derived_surfaces;
 std::vector<cell> cells;
 
+std::vector<std::string> split_words(std::string str) {
+    std::stringstream s(str);
+    std::vector<std::string> segments;
+    std::string word;
+    while (s >> word)
+    {
+        segments.push_back(word);
+    }
+    return segments;
+}
+
+
 void read_params(){
     std::fstream myfile("params.txt", std::ios_base::in);
     std::string a;
@@ -187,6 +199,53 @@ void read_surfaces(std::string file_name){
             derived_surfaces.push_back(read_next_derived_surface(myfile, key));
         }else if(!key.compare("cell")){
             cells.push_back(read_next_cell(myfile, key));
+        }
+    }
+}
+
+void load_cross_section_data(std::string file_name, endf &endf) {
+    std::string line;
+    std::ifstream file;
+    file.open(file_name);
+    if (file.is_open()) {
+        getline(file, line);
+        std::vector<std::string> w = split_words(line);
+        endf.symbol = w[0];
+        endf.Z = std::stoi(w[1]);
+        endf.A = std::stoi(w[2]);
+        endf.AW = std::stof(w[3]);
+        endf.T = std::stof(w[4]);
+
+        getline(file, line);
+        w = split_words(line);
+        endf.NNU = std::stof(w[0]);
+
+        for (int i = 0; i < endf.NNU; i++) {
+            getline(file, line);
+            w = split_words(line);
+            endf.energies.push_back(std::stof(w[0]));
+            endf.nubars.push_back(std::stof(w[1]));
+        }
+
+        int j = 0;
+        while (getline(file, line)) {
+            w = split_words(line);
+            endf.MTs.push_back(std::stoi(w[0]));
+            endf.Qs.push_back(std::stof(w[1]));
+            endf.NEs.push_back(std::stoi(w[2]));
+
+            std::vector<float> cs_energies;
+            std::vector<float> cross_sections;
+            endf.cross_section_energies.push_back(cs_energies);
+            endf.cross_sections.push_back(cross_sections);
+
+            for (int i = 0; i < endf.NEs[j]; i++) {
+                getline(file, line);
+                w = split_words(line);
+                endf.cross_section_energies[j].push_back(std::stof(w[0]));
+                endf.cross_sections[j].push_back(std::stof(w[1]));
+            }
+            j++;
         }
     }
 }

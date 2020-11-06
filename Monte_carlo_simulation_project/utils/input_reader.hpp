@@ -13,11 +13,16 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sstream>
 
 #include "quadratic_surface.hpp"
 #include "derived_surface.hpp"
 #include "cell.hpp"
 #include "global_params.hpp"
+#include "endf.hpp"
+
+
+std::vector<std::string> split_words(std::string str);
 
 void read_params();
 
@@ -37,4 +42,6 @@ infinite_square_prism read_infinite_square_prism(std::fstream& myfile, std::stri
 derived_surface read_next_derived_surface(std::fstream& myfile, std::string& a);
 cell read_next_cell(std::fstream& myfile, std::string& a);
 void read_surfaces(std::string file_name);
+
+void load_cross_section_data(std::string file_name, endf &ENDF);
 #endif /* input_reader_hpp */

@@ -7,11 +7,10 @@
 
 #include "global_params.hpp"
 #include "input_reader.hpp"
-
 #include "buffons_needle.hpp"
 #include "monte_carlo_pi_approximation_circle.hpp"
-
 #include "monte_carlo_volume_sampling.hpp"
+#include "endf.hpp"
 
 void round_1_assignment(){
     read_params();
@@ -24,8 +23,13 @@ void round_2_assignment(){
     fuel_pin();
     hollow_cylinder();
 }
+
+void round_3_assignment(){
+    endf endf_object = endf("H1.txt");
+}
  
 int main() {
     //round_1_assignment();
-    round_2_assignment();
+    //round_2_assignment();
+    round_3_assignment();
 }

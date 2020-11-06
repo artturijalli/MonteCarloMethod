@@ -11,12 +11,14 @@
 		87095AA125374157003226E8 /* derived_surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095A9F25374157003226E8 /* derived_surface.cpp */; };
 		87095AA425375685003226E8 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095AA225375685003226E8 /* cell.cpp */; };
 		87095AA725384198003226E8 /* cell_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87095AA525384198003226E8 /* cell_search.cpp */; };
+		8712A6452555397F003E211E /* endf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8712A6432555397F003E211E /* endf.cpp */; };
 		871D4895252E3A410031C5B3 /* buffons_needle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871D4893252E3A410031C5B3 /* buffons_needle.cpp */; };
 		871D4898252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */; };
 		8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E0252E1B2C00C56E7D /* input_reader.cpp */; };
 		8763B5EB252E28ED00C56E7D /* statistical_analysis_methods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */; };
 		8763B5EE252E2A6500C56E7D /* runtime_clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */; };
 		87AECB4325223D340075CD28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87AECB4225223D340075CD28 /* main.cpp */; };
+		87B9B3872555458B00F262DE /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B9B3852555458B00F262DE /* helpers.cpp */; };
 		87E26383253C2DC100B58043 /* volumes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E26381253C2DC100B58043 /* volumes.cpp */; };
 		87E26389253C2F2300B58043 /* monte_carlo_volume_sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */; };
 		87E2638E253C315800B58043 /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E2638C253C315800B58043 /* random.cpp */; };
@@ -43,6 +45,8 @@
 		87095AA325375685003226E8 /* cell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cell.hpp; sourceTree = "<group>"; };
 		87095AA525384198003226E8 /* cell_search.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cell_search.cpp; sourceTree = "<group>"; };
 		87095AA625384198003226E8 /* cell_search.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cell_search.hpp; sourceTree = "<group>"; };
+		8712A6432555397F003E211E /* endf.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = endf.cpp; sourceTree = "<group>"; };
+		8712A6442555397F003E211E /* endf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = endf.hpp; sourceTree = "<group>"; };
 		871D4893252E3A410031C5B3 /* buffons_needle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = buffons_needle.cpp; sourceTree = "<group>"; };
 		871D4894252E3A410031C5B3 /* buffons_needle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = buffons_needle.hpp; sourceTree = "<group>"; };
 		871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monte_carlo_pi_approximation_circle.cpp; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = runtime_clock.hpp; sourceTree = "<group>"; };
 		87AECB3F25223D340075CD28 /* Monte_carlo_simulation_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Monte_carlo_simulation_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AECB4225223D340075CD28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		87B9B3852555458B00F262DE /* helpers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
+		87B9B3862555458B00F262DE /* helpers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = helpers.hpp; sourceTree = "<group>"; };
 		87E26381253C2DC100B58043 /* volumes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = volumes.cpp; sourceTree = "<group>"; };
 		87E26382253C2DC100B58043 /* volumes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = volumes.hpp; sourceTree = "<group>"; };
 		87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monte_carlo_volume_sampling.cpp; sourceTree = "<group>"; };
@@ -130,6 +136,10 @@
 				87E26382253C2DC100B58043 /* volumes.hpp */,
 				87E2638C253C315800B58043 /* random.cpp */,
 				87E2638D253C315800B58043 /* random.hpp */,
+				8712A6432555397F003E211E /* endf.cpp */,
+				8712A6442555397F003E211E /* endf.hpp */,
+				87B9B3852555458B00F262DE /* helpers.cpp */,
+				87B9B3862555458B00F262DE /* helpers.hpp */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -213,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8712A6452555397F003E211E /* endf.cpp in Sources */,
 				871D4898252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp in Sources */,
 				87E26383253C2DC100B58043 /* volumes.cpp in Sources */,
 				87E2638E253C315800B58043 /* random.cpp in Sources */,
@@ -225,6 +236,7 @@
 				8763B5EB252E28ED00C56E7D /* statistical_analysis_methods.cpp in Sources */,
 				87095AA725384198003226E8 /* cell_search.cpp in Sources */,
 				87095AA125374157003226E8 /* derived_surface.cpp in Sources */,
+				87B9B3872555458B00F262DE /* helpers.cpp in Sources */,
 				8763B5E2252E1B2C00C56E7D /* input_reader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
