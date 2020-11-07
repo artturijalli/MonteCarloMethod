@@ -34,3 +34,23 @@ std::vector<float> linspace(float start_in, float end_in, int num_in)
                             // are exactly the same as the input
     return linspaced;
 }
+
+float V_cell(float N_inside, float N_total, float V_bounding_box){
+    return V_bounding_box * (N_inside / N_total);
+}
+
+float V_sphere(float r){
+    return (4.0f/3.0f) * M_PI * r * r * r;
+}
+
+float V_cylinder(float r, float h){
+    return M_PI * r * r * h;
+}
+
+float V_box(float a, float b, float c){
+    return a * b * c;
+}
+
+float random_between(float min, float max){
+    return ((float)rand() / (RAND_MAX)) * (max - min) + min;
+}

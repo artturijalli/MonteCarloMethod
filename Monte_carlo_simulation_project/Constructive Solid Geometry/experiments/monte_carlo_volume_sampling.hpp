@@ -12,8 +12,7 @@
 #include <stdio.h>
 
 #include "cell_search.hpp"
-#include "volumes.hpp"
-#include "random.hpp"
+#include "math_helpers.hpp"
 #include "input_reader.hpp"
 
 void fuel_pin();

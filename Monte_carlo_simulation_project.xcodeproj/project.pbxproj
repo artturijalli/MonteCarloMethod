@@ -22,9 +22,7 @@
 		87B9B3A025556DEE00F262DE /* math_helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B9B39E25556DEE00F262DE /* math_helpers.cpp */; };
 		87B9B3A42555904A00F262DE /* output_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B9B3A22555904A00F262DE /* output_writer.cpp */; };
 		87B9B3A82556B6EA00F262DE /* cross_section_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B9B3A62556B6EA00F262DE /* cross_section_data.cpp */; };
-		87E26383253C2DC100B58043 /* volumes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E26381253C2DC100B58043 /* volumes.cpp */; };
 		87E26389253C2F2300B58043 /* monte_carlo_volume_sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */; };
-		87E2638E253C315800B58043 /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E2638C253C315800B58043 /* random.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,12 +69,8 @@
 		87B9B3A32555904A00F262DE /* output_writer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = output_writer.hpp; sourceTree = "<group>"; };
 		87B9B3A62556B6EA00F262DE /* cross_section_data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cross_section_data.cpp; sourceTree = "<group>"; };
 		87B9B3A72556B6EA00F262DE /* cross_section_data.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cross_section_data.hpp; sourceTree = "<group>"; };
-		87E26381253C2DC100B58043 /* volumes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = volumes.cpp; sourceTree = "<group>"; };
-		87E26382253C2DC100B58043 /* volumes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = volumes.hpp; sourceTree = "<group>"; };
 		87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = monte_carlo_volume_sampling.cpp; sourceTree = "<group>"; };
 		87E26388253C2F2300B58043 /* monte_carlo_volume_sampling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = monte_carlo_volume_sampling.hpp; sourceTree = "<group>"; };
-		87E2638C253C315800B58043 /* random.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = random.cpp; sourceTree = "<group>"; };
-		87E2638D253C315800B58043 /* random.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = random.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,76 +103,136 @@
 		87AECB4125223D340075CD28 /* Monte_carlo_simulation_project */ = {
 			isa = PBXGroup;
 			children = (
-				87E2638F253C31C100B58043 /* surfaces */,
-				87E26390253C320500B58043 /* main */,
-				87E2638B253C314200B58043 /* utils */,
-				87E2638A253C302500B58043 /* experiments */,
+				87AECB4225223D340075CD28 /* main.cpp */,
+				871D4899252E3D390031C5B3 /* global_params.hpp */,
+				87B9B3BB2556C0F200F262DE /* Basic Monte Carlo */,
+				87B9B3BC2556C10E00F262DE /* Constructive Solid Geometry */,
+				87B9B3BD2556C12900F262DE /* Interaction Physics */,
+				87E2638B253C314200B58043 /* Utils */,
 			);
 			path = Monte_carlo_simulation_project;
 			sourceTree = "<group>";
 		};
-		87E2638A253C302500B58043 /* experiments */ = {
+		87B9B3AD2556BD1A00F262DE /* math */ = {
+			isa = PBXGroup;
+			children = (
+				8763B5EA252E28ED00C56E7D /* statistical_analysis_methods.hpp */,
+				8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */,
+				87B9B39F25556DEE00F262DE /* math_helpers.hpp */,
+				87B9B39E25556DEE00F262DE /* math_helpers.cpp */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		87B9B3AF2556BD3200F262DE /* file handling */ = {
+			isa = PBXGroup;
+			children = (
+				8763B5E1252E1B2C00C56E7D /* input_reader.hpp */,
+				8763B5E0252E1B2C00C56E7D /* input_reader.cpp */,
+				87B9B3A22555904A00F262DE /* output_writer.cpp */,
+				87B9B3A32555904A00F262DE /* output_writer.hpp */,
+			);
+			path = "file handling";
+			sourceTree = "<group>";
+		};
+		87B9B3B42556BE1900F262DE /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */,
+				8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */,
+				87B9B3862555458B00F262DE /* helpers.hpp */,
+				87B9B3852555458B00F262DE /* helpers.cpp */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		87B9B3B92556C01E00F262DE /* endf */ = {
+			isa = PBXGroup;
+			children = (
+				8712A6442555397F003E211E /* endf.hpp */,
+				8712A6432555397F003E211E /* endf.cpp */,
+			);
+			path = endf;
+			sourceTree = "<group>";
+		};
+		87B9B3BB2556C0F200F262DE /* Basic Monte Carlo */ = {
+			isa = PBXGroup;
+			children = (
+				87B9B3C02556C1AD00F262DE /* experiments */,
+			);
+			path = "Basic Monte Carlo";
+			sourceTree = "<group>";
+		};
+		87B9B3BC2556C10E00F262DE /* Constructive Solid Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				87E2638F253C31C100B58043 /* cells and surfaces */,
+				87B9B3C22556C1BD00F262DE /* experiments */,
+			);
+			path = "Constructive Solid Geometry";
+			sourceTree = "<group>";
+		};
+		87B9B3BD2556C12900F262DE /* Interaction Physics */ = {
+			isa = PBXGroup;
+			children = (
+				87B9B3BE2556C19800F262DE /* experiments */,
+				87B9B3B92556C01E00F262DE /* endf */,
+			);
+			path = "Interaction Physics";
+			sourceTree = "<group>";
+		};
+		87B9B3BE2556C19800F262DE /* experiments */ = {
 			isa = PBXGroup;
 			children = (
 				87B9B3A62556B6EA00F262DE /* cross_section_data.cpp */,
 				87B9B3A72556B6EA00F262DE /* cross_section_data.hpp */,
+			);
+			path = experiments;
+			sourceTree = "<group>";
+		};
+		87B9B3C02556C1AD00F262DE /* experiments */ = {
+			isa = PBXGroup;
+			children = (
 				871D4893252E3A410031C5B3 /* buffons_needle.cpp */,
-				871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */,
-				87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */,
 				871D4894252E3A410031C5B3 /* buffons_needle.hpp */,
+				871D4896252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp */,
 				871D4897252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.hpp */,
+			);
+			path = experiments;
+			sourceTree = "<group>";
+		};
+		87B9B3C22556C1BD00F262DE /* experiments */ = {
+			isa = PBXGroup;
+			children = (
+				87E26387253C2F2300B58043 /* monte_carlo_volume_sampling.cpp */,
 				87E26388253C2F2300B58043 /* monte_carlo_volume_sampling.hpp */,
 			);
 			path = experiments;
 			sourceTree = "<group>";
 		};
-		87E2638B253C314200B58043 /* utils */ = {
+		87E2638B253C314200B58043 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				87B9B39F25556DEE00F262DE /* math_helpers.hpp */,
-				87095AA625384198003226E8 /* cell_search.hpp */,
-				8763B5E1252E1B2C00C56E7D /* input_reader.hpp */,
-				8763B5EA252E28ED00C56E7D /* statistical_analysis_methods.hpp */,
-				8763B5ED252E2A6500C56E7D /* runtime_clock.hpp */,
-				87E26382253C2DC100B58043 /* volumes.hpp */,
-				87E2638D253C315800B58043 /* random.hpp */,
-				8712A6442555397F003E211E /* endf.hpp */,
-				87B9B3862555458B00F262DE /* helpers.hpp */,
-				87B9B39E25556DEE00F262DE /* math_helpers.cpp */,
-				87095AA525384198003226E8 /* cell_search.cpp */,
-				8763B5E0252E1B2C00C56E7D /* input_reader.cpp */,
-				8763B5E9252E28ED00C56E7D /* statistical_analysis_methods.cpp */,
-				8763B5EC252E2A6500C56E7D /* runtime_clock.cpp */,
-				87E26381253C2DC100B58043 /* volumes.cpp */,
-				87E2638C253C315800B58043 /* random.cpp */,
-				8712A6432555397F003E211E /* endf.cpp */,
-				87B9B3852555458B00F262DE /* helpers.cpp */,
-				87B9B3A22555904A00F262DE /* output_writer.cpp */,
-				87B9B3A32555904A00F262DE /* output_writer.hpp */,
+				87B9B3AD2556BD1A00F262DE /* math */,
+				87B9B3AF2556BD3200F262DE /* file handling */,
+				87B9B3B42556BE1900F262DE /* misc */,
 			);
-			path = utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		87E2638F253C31C100B58043 /* surfaces */ = {
+		87E2638F253C31C100B58043 /* cells and surfaces */ = {
 			isa = PBXGroup;
 			children = (
+				87095AA625384198003226E8 /* cell_search.hpp */,
+				87095AA525384198003226E8 /* cell_search.cpp */,
 				87095A992535FDC6003226E8 /* quadratic_surface.cpp */,
-				87095A9F25374157003226E8 /* derived_surface.cpp */,
-				87095AA225375685003226E8 /* cell.cpp */,
 				87095A9A2535FDC6003226E8 /* quadratic_surface.hpp */,
+				87095A9F25374157003226E8 /* derived_surface.cpp */,
 				87095AA025374157003226E8 /* derived_surface.hpp */,
+				87095AA225375685003226E8 /* cell.cpp */,
 				87095AA325375685003226E8 /* cell.hpp */,
 			);
-			path = surfaces;
-			sourceTree = "<group>";
-		};
-		87E26390253C320500B58043 /* main */ = {
-			isa = PBXGroup;
-			children = (
-				87AECB4225223D340075CD28 /* main.cpp */,
-				871D4899252E3D390031C5B3 /* global_params.hpp */,
-			);
-			path = main;
+			path = "cells and surfaces";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +295,7 @@
 				8712A6452555397F003E211E /* endf.cpp in Sources */,
 				871D4898252E3BFE0031C5B3 /* monte_carlo_pi_approximation_circle.cpp in Sources */,
 				87B9B3A82556B6EA00F262DE /* cross_section_data.cpp in Sources */,
-				87E26383253C2DC100B58043 /* volumes.cpp in Sources */,
 				87B9B3A42555904A00F262DE /* output_writer.cpp in Sources */,
-				87E2638E253C315800B58043 /* random.cpp in Sources */,
 				87095A9B2535FDC6003226E8 /* quadratic_surface.cpp in Sources */,
 				87E26389253C2F2300B58043 /* monte_carlo_volume_sampling.cpp in Sources */,
 				871D4895252E3A410031C5B3 /* buffons_needle.cpp in Sources */,
