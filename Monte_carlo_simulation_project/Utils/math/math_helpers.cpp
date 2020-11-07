@@ -1,11 +1,3 @@
-//
-//  math_helpers.cpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 6.11.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #include "math_helpers.hpp"
 #include <iostream>
 #include <vector>
@@ -30,8 +22,7 @@ std::vector<float> linspace(float start_in, float end_in, int num_in)
     for(int i=0; i < num-1; ++i){
       linspaced.push_back(start + delta * i);
     }
-    linspaced.push_back(end); // I want to ensure that start and end
-                            // are exactly the same as the input
+    linspaced.push_back(end);
     return linspaced;
 }
 

@@ -1,11 +1,3 @@
-//
-//  derived_surface.hpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 14.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #ifndef derived_surface_hpp
 #define derived_surface_hpp
 

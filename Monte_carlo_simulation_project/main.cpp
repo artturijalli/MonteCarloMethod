@@ -1,8 +1,3 @@
-//  main.cpp
-//  PHYS-E0565_project
-//  Created by Artturi Jalli on 28.9.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-
 #include <iostream>
 #include <algorithm>
 #include <stdio.h>
@@ -16,8 +11,6 @@
 #include "math_helpers.hpp"
 #include "helpers.hpp"
 #include "cross_section_data.hpp"
-
-
 
 void round_1_assignment(){
     read_params();

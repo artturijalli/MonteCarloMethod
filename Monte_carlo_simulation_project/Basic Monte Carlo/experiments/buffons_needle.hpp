@@ -1,11 +1,3 @@
-//
-//  buffons_needle.hpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 7.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #ifndef buffons_needle_hpp
 #define buffons_needle_hpp
 

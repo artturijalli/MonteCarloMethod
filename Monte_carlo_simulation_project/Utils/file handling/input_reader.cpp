@@ -1,11 +1,3 @@
-//
-//  input_reader.cpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 7.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #include "input_reader.hpp"
 
 int M;

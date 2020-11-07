@@ -1,11 +1,3 @@
-//
-//  statistical_analysis_methods.hpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 7.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #ifndef statistical_analysis_methods_hpp
 #define statistical_analysis_methods_hpp
 

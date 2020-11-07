@@ -1,11 +1,3 @@
-//
-//  quadratic_surface.hpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 13.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #ifndef quadratic_surface_hpp
 #define quadratic_surface_hpp
 

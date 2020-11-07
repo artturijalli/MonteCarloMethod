@@ -1,11 +1,3 @@
-//
-//  monte_carlo_volume_sampling.cpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 18.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #include "monte_carlo_volume_sampling.hpp"
 
 void fuel_pin(){
@@ -61,7 +53,6 @@ void hollow_cylinder(){
     while (j < M) {
         j++;
 
-        // Count the number of points falling inside each cell
         int index = cell_search(cells, random_between(x_min, x_max), random_between(y_min, y_max), random_between(z_min, z_max));
         if (index != -1) {
             if(index == 0){

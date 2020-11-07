@@ -1,11 +1,3 @@
-//
-//  monte_carlo_pi_approximation_circle.hpp
-//  Monte_carlo_simulation_project
-//
-//  Created by Artturi Jalli on 7.10.2020.
-//  Copyright © 2020 Artturi Jalli. All rights reserved.
-//
-
 #ifndef monte_carlo_pi_approximation_circle_hpp
 #define monte_carlo_pi_approximation_circle_hpp
 
