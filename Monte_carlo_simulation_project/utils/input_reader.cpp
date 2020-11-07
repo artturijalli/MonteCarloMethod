@@ -243,7 +243,7 @@ void load_cross_section_data(std::string file_name, endf &endf) {
                 getline(file, line);
                 w = split_words(line);
                 endf.cross_section_energies[j].push_back(std::stof(w[0]));
-                endf.cross_sections[j].push_back(std::stof(w[1]));
+                endf.cross_sections[j].push_back(std::stod(w[1]));
             }
             j++;
         }

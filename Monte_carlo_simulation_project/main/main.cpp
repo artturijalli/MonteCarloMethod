@@ -4,6 +4,8 @@
 //  Copyright © 2020 Artturi Jalli. All rights reserved.
 
 #include <iostream>
+#include <algorithm>
+#include <stdio.h>
 
 #include "global_params.hpp"
 #include "input_reader.hpp"
@@ -11,6 +13,11 @@
 #include "monte_carlo_pi_approximation_circle.hpp"
 #include "monte_carlo_volume_sampling.hpp"
 #include "endf.hpp"
+#include "math_helpers.hpp"
+#include "helpers.hpp"
+#include "cross_section_data.hpp"
+
+
 
 void round_1_assignment(){
     read_params();
@@ -25,7 +32,7 @@ void round_2_assignment(){
 }
 
 void round_3_assignment(){
-    endf endf_object = endf("H1.txt");
+    get_asked_cross_section_datasets();
 }
  
 int main() {

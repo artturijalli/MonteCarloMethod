@@ -34,8 +34,7 @@ public:
 
     endf(std::string file_name);
 
-    float cross_section_interpolation(float E, std::vector<float> energies, std::vector<float> cross_sections);
-    float cross_section(float E, std::vector<int> MT_numbers);
+    float cross_section_binary_search(float E, std::vector<int> MT_numbers);
 };
 
 #endif /* endf_hpp */
